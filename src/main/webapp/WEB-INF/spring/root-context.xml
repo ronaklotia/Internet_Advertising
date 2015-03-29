@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		
+		<bean id="websiteDAO" class="com.internetadvert.edu.DAO.WebsiteDAO"></bean>
+		<bean id="adminDAO" class="com.internetadvert.edu.DAO.AdminDAO"></bean>
+		<bean id="bidDAO" class="com.internetadvert.edu.DAO.BidDAO"></bean>
+		<bean id="categoryDAO" class="com.internetadvert.edu.DAO.CategoryDAO"></bean>
+		<bean id="companyDAO" class="com.internetadvert.edu.DAO.CompanyDAO"></bean>
+		<bean id="employeeDAO" class="com.internetadvert.edu.DAO.EmployeeDAO"></bean>
+		<bean id="exchangeDAO" class="com.internetadvert.edu.DAO.ExchangeDAO"></bean>
+		<bean id="loginDAO" class="com.internetadvert.edu.DAO.LoginDAO"></bean>
+		<bean id="networkDAO" class="com.internetadvert.edu.DAO.NetworkDAO"></bean>
+		<bean id="paymentDAO" class="com.internetadvert.edu.DAO.PaymentDAO"></bean>
+		<bean id="productDAO" class="com.internetadvert.edu.DAO.ProductDAO"></bean>
+		<bean id="userDAO" class="com.internetadvert.edu.DAO.UserDAO"></bean>
+		<bean id="userDetailsDAO" class="com.internetadvert.edu.DAO.UserDetailsDAO"></bean>
+		<bean id="invocieDAO" class="com.internetadvert.edu.DAO.InvoiceDAO"></bean>
+		<bean id="categoryList" class="com.internetadvert.edu.Pojo.CategoryList"></bean>
+		<bean id="networkList" class="com.internetadvert.edu.Pojo.NetworkList"></bean>
+		<bean id="productList" class="com.internetadvert.edu.Pojo.ProductList"></bean>
+		
+		 <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+		
+		
+	
+</beans>
+

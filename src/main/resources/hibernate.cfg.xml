@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password"></property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/internet_advertising</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.default_schema">internet_advertising</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+
+		<mapping class="com.internetadvert.edu.Pojo.User" />
+		<mapping class="com.internetadvert.edu.Pojo.Admin" />
+		<mapping class="com.internetadvert.edu.Pojo.Catogries" />
+		<mapping class="com.internetadvert.edu.Pojo.Product" />
+		<mapping class="com.internetadvert.edu.Pojo.Website" />
+		<mapping class="com.internetadvert.edu.Pojo.NetworkList" />
+		<mapping class="com.internetadvert.edu.Pojo.Network" />
+		<mapping class="com.internetadvert.edu.Pojo.Employee" />
+		<mapping class="com.internetadvert.edu.Pojo.Bid" />
+		<mapping class="com.internetadvert.edu.Pojo.AdverstisingCompany" />
+		<mapping class="com.internetadvert.edu.Pojo.Exchange" />
+		<mapping class="com.internetadvert.edu.Pojo.Payment" />
+		<mapping class="com.internetadvert.edu.Pojo.UserDetails" />
+		<mapping class="com.internetadvert.edu.Pojo.Invoice" />
+		<mapping class="com.internetadvert.edu.Filter.XSSFilter" />
+		<mapping class="com.internetadvert.edu.Filter.XSSWrapper" />
+		<mapping class="com.internetadvert.edu.Controller.RegisterUserController" />
+		<mapping class="com.internetadvert.edu.Controller.DisplayNetworkController" />
+		<mapping class="com.internetadvert.edu.DAO.DAO" />
+		<mapping class="com.internetadvert.edu.DAO.AdminDAO" />
+		<mapping class="com.internetadvert.edu.DAO.UserDAO" />
+		<mapping class="com.internetadvert.edu.DAO.UserDetailsDAO" />
+	</session-factory>
+</hibernate-configuration>
